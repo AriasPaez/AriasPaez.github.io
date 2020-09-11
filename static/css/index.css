@@ -2,6 +2,9 @@
 :root{
     --b-light-page:#1b9aaa;
     --f-color-light:#ffffff;
+    --w-img-profile:200px;
+    --h-img-profile:200px;
+    --separator-line:#dddbcb;
 }
 
 *{
@@ -10,6 +13,7 @@
     font-family: 'Grandstander', cursive;
 }
 a{
+    color: white;
     text-decoration: none;
 }
 body{
@@ -17,7 +21,7 @@ body{
     width: 100%;
 
     display: grid;
-    grid-template: 100px 1fr 100px / 1fr ;
+    grid-template: 100px 1fr 120px / 1fr ;
     grid-template-areas:"header"
                         "content"
                         "footer";
@@ -31,17 +35,102 @@ header{
 }
 .content{
     grid-area: content;
+    width: 900px;
+    padding: 20px;
+    justify-self: center;      
+    align-items: flex-start;
+    
+    border: 1px solid var(--separator-line);
+}
+.section-info{
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.profile{
+    width: inherit;
+    height: inherit;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.profile img{
+    width: var(--w-img-profile);
+    height: var(--h-img-profile);
+
+    border-radius: 50%;
+}
+article{
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--separator-line);
+    
+}
+.title-article{
+    padding-bottom: 10px;
+}
+.items-skills{
+    list-style-type: none;
+    /* display: inline; */
+    display: flex;
+    overflow: hidden;
+    width: inherit;
+    height: 100px;
+    margin: 5px 0;
+    
+}
+li{
+    padding: 10px 10px;
+}
+article.skills i{
+    font-size: 50px;
+    margin-bottom: 15px;    
+}
+article.skills i.skill-html5{
+    color: orangered;
+}
+article.skills i.skill-css3{
+    color: blue;
+}
+article.skills i.skill-js{
+    color: yellow;
+}
+article.skills i.skill-python{
+    color: green;
 }
 footer{
-    grid-area: footer;
-    border-top: 1px solid #dddbcb;
-    display: flex;
+    width: inherit;
+    grid-area: footer; 
+    display: grid;
+    /* grid-template-rows: repeat(50px); */
+    background-color: var(--b-light-page);
+    border-top: 1px solid var(--separator-line);
+    /* display: flex; */
     justify-content: center;
-    align-items: center;
-    
+    align-content: space-around;   
 
+}
+footer .contact{
+    /* width: inherit; */
+    display: inline-flex;
+    justify-content: center;
+}
+
+footer p {
+    color: var(--f-color-light);
+    /* height: 50px; */
+}
+
+footer .contact a i {
+    color: var(--f-color-light);
+    font-size: 30px;
+    padding: 0 10px;
+}
+.fa-heart{
+    color: #cf4d6f;
+}
+.fa-brain{
+    color: lightcoral;
 }
