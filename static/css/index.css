@@ -67,7 +67,7 @@ nav{
     /* overflow: hidden; */
     border: 1px solid var(--separator-line);
 
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     
 }
 .section-info{
