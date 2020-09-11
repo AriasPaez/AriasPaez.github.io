@@ -6,6 +6,14 @@
     --h-img-profile:200px;
     --separator-line:#dddbcb;
     --color-black:#050505;
+
+    --w_modal:400px;
+
+    --col:575px;
+    --sm:576px;
+    --md:768px;
+    --lg:992px;
+    --xl:1200px;
 }
 
 *{
@@ -264,4 +272,17 @@ footer .contact a i {
         transform: translateY(5px);
     }
 
+}
+/* --col:575px;
+--sm:576px;
+--md:768px;
+--lg:992px;
+--xl:1200px; */
+@media screen and (max-width: 575px ){
+    .content{
+        width: 100%;
+    }
+    .modal{
+        width: 320px;
+    }
 }
