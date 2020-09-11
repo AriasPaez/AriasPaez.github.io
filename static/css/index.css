@@ -33,11 +33,12 @@ body{
     width: 100%;
 
     display: grid;
-    grid-template: 70px 1fr 120px / 1fr ;
+    grid-template: 70px 1fr 120px /  1fr;
     grid-template-areas:"header"
                         "content"
                         "footer";
     align-content: space-between;
+    justify-content: center;
 }
 
 header{
@@ -59,12 +60,15 @@ nav{
 }
 .content{
     grid-area: content;
-    width: 900px;
+    width: var(--lg);
     padding: 20px;
     justify-self: center;      
     align-items: flex-start;
-    
+    /* overflow: hidden; */
     border: 1px solid var(--separator-line);
+
+    /* box-sizing: border-box; */
+    
 }
 .section-info{
     width: inherit;
@@ -280,9 +284,11 @@ footer .contact a i {
 --xl:1200px; */
 @media screen and (max-width: 575px ){
     .content{
-        width: 100%;
+        width: inherit;
     }
-    .modal{
-        width: 320px;
+}
+@media screen and (min-width: 575px ) and (max-width: 1200px ){
+    .content{
+        width: inherit;
     }
 }
