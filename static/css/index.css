@@ -1,6 +1,21 @@
 
 :root{
-    --b-light-page:#1b9aaa;
+    --color-one-dark:#363732;
+    --color-two-dark:#dddbcb;
+    --color-three-dark:#f7f6c5;
+
+    --color-two:#53d8fb;
+    --color-three:#66c3ff;
+    --color-four:#dce1e9;
+    --color-five:#d4afb9;
+    --color-six:#dddbcb;
+
+    --color-one-light:#1b9aaa;
+    --color-two-light:#ffffff;
+    --color-three-light:#66c3ff;
+    --color-four-light:#dddbcb;
+    /* --b-light-mode:var(--); */
+
     --f-color-light:#ffffff;
     --w-img-profile:200px;
     --h-img-profile:200px;
@@ -29,9 +44,10 @@ ul{
     list-style-type: none;
 }
 body{
+    /* background-color: var(--); */
     height: 100vh;
     width: 100%;
-
+    background-color: var(--color-two-light);
     display: grid;
     grid-template: 70px 300px 1fr 120px /  1fr;
     grid-template-areas:"header"
@@ -45,7 +61,7 @@ body{
 header{
     grid-area: header;
     height: 50px;
-    background-color: var(--b-light-page);
+    background-color: var(--color-one-light);
     color: var(--f-color-light);
     padding: 10px;
     box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
@@ -60,6 +76,24 @@ nav{
 .item-nav{
     padding: 0 10px;
 }
+header ul,
+header ul li{
+    width: 100px;
+    height: inherit;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+header ul li .btn{
+margin: 0;
+background-color: var(--color-four-light);
+}
+header ul li .btn i{
+    position: relative;
+    
+    }
+
 .hero{
     grid-area: hero;
     width: inherit;
@@ -116,6 +150,7 @@ article{
     margin-bottom: 20px;
     border-bottom: 1px solid var(--separator-line);
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
     
 }
 .contact-me .contact i{
@@ -123,14 +158,14 @@ article{
     font-size: 50px;
 }
 .contact-me .contact .fa-twitter-square{
-    color: var(--b-light-page);
+    color: var(--color-one-dark);
 }
 .contact-me .contact .fa-github{
     color: var(--color-black);
 }
 
 .presentation a{
-    color: var(--b-light-page);
+    color: var(--color-one-dark);
 }
 .title-article{
     padding-bottom: 10px;
@@ -145,7 +180,7 @@ article{
     margin: 5px 0;
     
 }
-li{
+.skills li{
     padding: 10px 10px;
 }
 article.skills i{
@@ -174,7 +209,7 @@ footer{
     grid-area: footer; 
     display: grid;
     /* grid-template-rows: repeat(50px); */
-    background-color: var(--b-light-page);
+    background-color: var(--color-one-light);
     border-top: 1px solid var(--separator-line);
     /* display: flex; */
     justify-content: center;
@@ -277,6 +312,20 @@ footer .contact a i {
 .btn:active {
     transform: scale(1.1);
 }
+
+
+header.dark-mode, 
+footer.dark-mode,
+.hero.dark-mode{
+background-color: var(--color-one-dark);
+}
+header ul li .btn.dark-mode{
+    background-color: var(--color-three-dark);
+    }
+body.dark-mode{
+    background-color: var(--color-two-dark);
+}
+
 
 @keyframes modalIn{
     0%{

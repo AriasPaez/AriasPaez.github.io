@@ -8,3 +8,7 @@
 ### Version 1.1
 <img src="src/versions-page/v1.1desktop.png" />
 <img src="src/versions-page/v1.1movil.png" width="50%" />
+
+### Version 1.2
+<img src="src/versions-page/v1.2desktopLight.png" />
+<img src="src/versions-page/v1.2desktopDark.png" />
