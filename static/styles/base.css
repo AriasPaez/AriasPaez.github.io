@@ -39,7 +39,9 @@ html {
   height: 100vh;
   position: relative;
   display: grid;
-  grid-template: 500px 1fr 1fr /1fr;
+  /* grid-template: 500px 1fr 1fr /1fr; */
+  grid-template-rows: 500px 1fr minmax(200px,1fr);
+  grid-template-columns: minmax(300px,1fr);
   grid-template-areas:
     "header"
     "main"
@@ -65,10 +67,18 @@ h2,h3{
 }
 /* Wraper */
 .wrapper {
-  width: 900px;
+  min-width: 18rem;
+  /* width: 300px; */
   height: 100%;
   margin: auto;
 }
-
+@media screen and (min-width:700px){
+  .wrapper {
+    min-width: 700px;
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+  }
+}
 
 

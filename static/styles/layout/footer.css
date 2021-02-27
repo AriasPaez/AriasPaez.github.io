@@ -11,34 +11,29 @@
 .footer a {
   color: var(--color-white);
 }
-.footer__wrapper{
+/* .footer__wrapper{
+  min-width: 18rem;
   width: 900px;
   height: 100%;
   margin: auto;
-}
+} */
 .footer__content {
   padding: 1rem 2rem;
   height: 100%;
   box-sizing: border-box;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .footer__copyright {
   margin: 0;
+  text-align: center;
 }
-.footer__contact h3 {
+.footer__contact {
+  width: 100%;
   margin: 0;
-}
-.footer__contact__title{
-text-align: end;
-}
-.footer__contact__list {
-  margin: 0;
-}
-.footer__contact__item i{
-    margin-left: 1rem;
-    font-size: 1.5rem;
+  text-align: center;
 }
 
 .fas.fa-heart {
@@ -47,3 +42,7 @@ text-align: end;
 .fas.fa-brain {
   color: lightcoral;
 }
+/* 
+@media screen and (min-width:){
+
+} */

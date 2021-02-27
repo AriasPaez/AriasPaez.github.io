@@ -1,24 +1,25 @@
 /* Header */
 .header {
   grid-area: header;
-  display: grid;
-  grid-template-rows: 90px 1fr;
-  grid-template-areas: "navbar" "hero";
+  /* display: grid; */
+  /* grid-template-rows: 6rem 1fr; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-areas: "navbar" "hero"; */
   background-color: var(--color-blue-10);
   /* box-shadow: 0 0.4em 0 0 rgba(0, 0, 0, 0.2); */
   clip-path: ellipse(100% 100% at top left);
-  
 }
-.header--dark{
+.header--dark {
   background-color: var(--color-blue-50);
 }
 
 .navbar {
-  grid-area: navbar;
+  /* grid-area: navbar; */
   padding-inline: 1rem;
   display: flex;
+
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   /* background-color: var(--color-blue-10); */
   color: var(--color-white);
@@ -26,30 +27,74 @@
 .navbar__list,
 .navbar__title {
   margin: 0;
+  font-size: 1rem;
 }
 /* Hero */
 .hero {
-  grid-area: hero;
+  /* height: 90%; */
+  /* grid-area: hero; */
   /* border: 1px solid red; */
   /* height: 300px; */
+  /* padding: 0; */
 }
 .hero__content {
+  margin: 0;
   height: 100%;
   width: 80%;
-  padding-left: 1em;
+  padding-inline: 1em;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   /* overflow: hidden; */
 }
 .hero__img {
+  /* position: relative; */
+  margin: auto;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-image: url("../../img/profile.jpg");
+  background-position: center;
   background-size: cover;
 }
 .hero__text {
   color: var(--color-white);
-  width: 500px;
-  font-size: 2rem;
+  width: 100%;
+  text-align: start;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .hero{
+    height: 90%;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow: hidden; */
+  }
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+.navbar__title {
+  /* margin: 0; */
+  font-size: 1.5rem;
+}
+  .hero__img {
+    margin: 0;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 400px;
+    max-width: 400px;
+  }
+  .hero__text {
+    color: var(--color-white);
+    min-width: 250px;
+    max-width: 500px;
+    text-align: start;
+    font-size: 2rem;
+  }
 }
