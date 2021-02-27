@@ -1,8 +1,3 @@
-:root {
-  --color-green-10: #53d336;
-  --color-green-20: #43b929;
-  --color-green-30: #379721;
-}
 /* Modal */
 .overlay {
   position: absolute;

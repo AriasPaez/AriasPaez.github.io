@@ -12,3 +12,7 @@
 ### Version 1.2
 <img src="src/versions-page/v1.2desktopLight.png" />
 <img src="src/versions-page/v1.2desktopDark.png" />
+
+### Version 2
+<img src="src/versions-page/v2.png" />
+<img src="src/versions-page/v2Dark.png" />

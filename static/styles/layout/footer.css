@@ -5,6 +5,9 @@
 
   clip-path: ellipse(100% 100% at bottom right);
 }
+.footer--dark{
+  background-color: var(--color-blue-50);
+}
 .footer a {
   color: var(--color-white);
 }

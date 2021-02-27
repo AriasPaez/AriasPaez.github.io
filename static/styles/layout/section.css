@@ -3,6 +3,9 @@
     padding-bottom: 3rem;
     margin-bottom: 2rem;
 }
+.section--dark{
+    color: var(--color-white);
+}
 .article{
     margin: 0 2rem;
     padding:1em;

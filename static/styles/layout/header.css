@@ -9,6 +9,9 @@
   clip-path: ellipse(100% 100% at top left);
   
 }
+.header--dark{
+  background-color: var(--color-blue-50);
+}
 
 .navbar {
   grid-area: navbar;
@@ -33,6 +36,7 @@
 .hero__content {
   height: 100%;
   width: 80%;
+  padding-left: 1em;
   display: flex;
   justify-content: space-around;
   /* overflow: hidden; */
