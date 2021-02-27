@@ -5,6 +5,11 @@
     padding-bottom: 3rem;
     margin-bottom: 2rem;
 }
+.section--dark a{
+    color: var(--color-white);
+    font-weight: bold;
+}
+
 .section--dark{
     color: var(--color-white);
 }
