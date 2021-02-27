@@ -32,12 +32,15 @@
     background-color: var(--color-green-10);
     box-shadow: 0 -5px 0 0 var(--color-green-30) inset;
   } */
+  .btn:hover{
+    background-color: var(--color-green-10);
+  }
   .btn:active{
     background-color: var(--color-green-10);
     box-shadow: 0 -1px 0 0 var(--color-green-30) inset, 0 5px 0 0 var(--color-gray-30) inset;
   }
   .btn--rounded {
-    display: inline-flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     min-width: 50px;

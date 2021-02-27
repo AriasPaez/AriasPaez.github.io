@@ -31,6 +31,8 @@
     <!-- My stylesheet -->
     <link rel="stylesheet" href="static/styles/base.css" />
     <link rel="shortcut icon" href="static/img/icon.svg" />
+
+    <title>Arias Web Page</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -47,7 +49,7 @@
     </script>
   </head>
   <body>
-    <div class="overlay">
+    <!-- <div class="overlay">
       <div class="modal">
         <div class="modal__figure">
           <h2 class="modal__title">Welcome!</h2>
@@ -58,33 +60,36 @@
             step. Make yourself at home
           </p>
           <div class="modal__actions">
-            <a class="btn" href="#"
-              >Entiendo <i class="fas fa-arrow-right"></i
+            <a id="btnCloseModal" class="btn" href="#"
+              >I got it <i class="fas fa-arrow-right"></i
             ></a>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <header class="header">
       <nav class="navbar">
-        <div class="navbar__title">
-          <h2>Arias Páez</h2>
-        </div>
+        <h2 class="navbar__title">Arias Páez</h2>
+
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a
-              id="btn-page-mode"
-              class="btn btn--rounded btn__mode__page"
-              href="#"
-            >
+            <a id="btn-page-mode" class="btn btn--rounded" href="#">
               <i class="btn__icon fas fa-campground"></i>
               <!-- <i class="btn--icon fas fa-fire"></i> -->
             </a>
           </li>
         </ul>
       </nav>
+      <div class="hero">
+        <div class="hero__content">
+          <div class="hero__img"></div>
+          <div class="hero__text">
+            <!-- <h3 class="title-article">Welcome to my page!!</h3> -->
+                <p>Hi, I am Cristian Arias and I'm a frontend developer. I <i class="fas fa-heart"></i> developing web page, both in frontend and backend. </p>
+          </div>
+        </div>
+      </div>
     </header>
-    <div class="hero"></div>
 
     <main class="main">
       <div class="wrapper">
@@ -93,8 +98,38 @@
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
-        <div class="footer-content"></div>
+      <div class="wraper">
+        <div class="footer__content">
+          <p class="footer__copyright">
+            Made with <i class="fas fa-heart"></i> and
+            <i class="fas fa-brain"></i> by
+            <a href="https://github.com/AriasPaez"
+              ><strong>Cristian Arias</strong></a
+            >
+            <strong>©</strong> 2021
+          </p>
+          <div class="footer__contact">
+            <div class="footer__contact__title">
+              <h3>Contact me:</h3>
+            </div>
+            <ul class="footer__contact__list">
+              <li class="footer__contact__item">
+                <a
+                  title="My twitter: @ariaspaezz"
+                  href="https://twitter.com/ariaspaezz"
+                  >Twitter<i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer__contact__item">
+                <a
+                  title="My github: @AriasPaez"
+                  href="https://github.com/AriasPaez"
+                  >Github<i class="fab fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -109,5 +144,6 @@
       //     .classList.replace("fa-campground", "fa-fire");
       //   });
     </script>
+    <script src="./static/js/modal.js"></script>
   </body>
 </html>

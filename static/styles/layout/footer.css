@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--color-blue-10);
+  color: var(--color-white);
+  grid-area: footer;
+
+  clip-path: ellipse(100% 100% at bottom right);
+}
+.footer a {
+  color: var(--color-white);
+}
+.wraper{
+    height: 100%;
+    margin: 0;  
+}
+.footer__content {
+  padding: 1rem 2rem;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer__copyright {
+  margin: 0;
+}
+.footer__contact h3 {
+  margin: 0;
+}
+.footer__contact__title{
+text-align: end;
+}
+.footer__contact__list {
+  margin: 0;
+}
+.footer__contact__item i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.fas.fa-heart {
+  color: #cc001b;
+}
+.fas.fa-brain {
+  color: lightcoral;
+}

@@ -1,5 +1,5 @@
-/* @import url("./layout/header.css"); */
-/* @import url("./layout/footer.css"); */
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
 @import url("./patterns/modal.css");
 @import url("./patterns/buttons.css");
 :root {
@@ -24,6 +24,12 @@ body {
   margin: 0;
   height: 100vh;
   position: relative;
+  display: grid;
+  grid-template: 500px 1fr 1fr /1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 li {
   list-style: none;
@@ -31,35 +37,10 @@ li {
 a {
   text-decoration: none;
 }
-
-
-/* Header */
-.navbar {
-  padding-inline: 1rem;
-  min-height: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: var(--color-blue-10);
-  color: var(--color-white);
-}
-.navbar__title,
-.navbar__list {
-  display: inline-block;
-}
 /* Wraper */
 .wraper {
-  border: 1px solid green;
   width: 900px;
   margin: auto;
-}
-
-/* Hero */
-.hero{
-    border: 1px solid red ;
-    height: 100px;
 }
 
 

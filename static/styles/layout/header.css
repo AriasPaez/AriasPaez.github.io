@@ -1,0 +1,51 @@
+/* Header */
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas: "navbar" "hero";
+  background-color: var(--color-blue-10);
+  /* box-shadow: 0 0.4em 0 0 rgba(0, 0, 0, 0.2); */
+  clip-path: ellipse(100% 100% at top left);
+  
+}
+
+.navbar {
+  grid-area: navbar;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-color: var(--color-blue-10); */
+  color: var(--color-white);
+}
+.navbar__list,
+.navbar__title {
+  margin: 0;
+}
+/* Hero */
+.hero {
+  grid-area: hero;
+  /* border: 1px solid red; */
+  /* height: 300px; */
+}
+.hero__content {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  /* overflow: hidden; */
+}
+.hero__img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-image: url("../../img/profile.jpg");
+  background-size: cover;
+}
+.hero__text {
+  color: var(--color-white);
+  width: 500px;
+  font-size: 2rem;
+}

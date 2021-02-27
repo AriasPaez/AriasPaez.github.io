@@ -26,7 +26,7 @@
   width: 37.5em;
   overflow: hidden;
 
-  animation: modalIn 0.8s forwards;
+  animation: modalIn .8s forwards;
 }
 .modal__figure {
   display: inline-flex;
@@ -59,7 +59,10 @@
 .modal__actions {
   margin: auto;
 }
-
+.overlay.deactivate{
+    opacity: 0;
+    visibility: hidden;
+}
 @keyframes modalIn {
   0% {
     transform: translateY(-3000px);
@@ -72,5 +75,19 @@
   }
   90% {
     transform: translateY(5px);
+  }
+}
+@keyframes modalOut {
+  0% {
+   opacity: .1;
+  }
+  60% {
+    opacity: .8;
+  }
+  75% {
+    opacity: .5;
+  }
+  90% {
+    opacity: 0;
   }
 }
