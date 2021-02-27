@@ -1,5 +1,8 @@
 
 :root{
+    /* Fonts */
+    font-family: 'Nunito Sans', sans-serif;
+    /* Colors */
     --color-one-dark:#363732;
     --color-two-dark:#dddbcb;
     --color-three-dark:#f7f6c5;
@@ -34,7 +37,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Grandstander', cursive;
 }
 a{
     color: white;

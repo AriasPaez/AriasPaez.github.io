@@ -1,0 +1,54 @@
+:root{
+    --color-green-10: #53d336;
+    --color-green-20: #43b929;
+    --color-green-30: #379721;
+  
+    --color-red-10: #cc001b;
+    --color-red-20: #a30016;
+
+    --color-gray-30: gray;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    text-decoration: none;  
+    display: inline-block;
+    min-width: 100px;
+    min-height: 50px;
+    height: 50px;
+    border-radius: 20px;
+    padding-inline: 1em;
+    color: var(--color-white);
+    background-color: var(--color-green-20);
+    box-shadow: 0 -5px 0 0 var(--color-green-30) inset;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .1s ease all;
+  }
+  /* .btn:hover{
+    background-color: var(--color-green-10);
+    box-shadow: 0 -5px 0 0 var(--color-green-30) inset;
+  } */
+  .btn:active{
+    background-color: var(--color-green-10);
+    box-shadow: 0 -1px 0 0 var(--color-green-30) inset, 0 5px 0 0 var(--color-gray-30) inset;
+  }
+  .btn--rounded {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-inline: 0;
+  }
+  .btn__mode__page--dark {
+      background-color: var(--color-green-30);
+      color: yellow;
+    }
+  .btn__mode__page {
+    background-color: var(--color-blue-50);
+  }
