@@ -1,7 +1,7 @@
-:root{
-    --color-green-10: #53d336;
-    --color-green-20: #43b929;
-    --color-green-30: #379721;
+:root {
+  --color-green-10: #53d336;
+  --color-green-20: #43b929;
+  --color-green-30: #379721;
 }
 /* Modal */
 .overlay {
@@ -14,6 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: 1.1s ease-in;
 }
 .modal {
   display: inline-flex;
@@ -23,6 +25,8 @@
   height: 18em;
   width: 37.5em;
   overflow: hidden;
+
+  animation: modalIn 0.8s forwards;
 }
 .modal__figure {
   display: inline-flex;
@@ -43,15 +47,30 @@
   flex-direction: column;
   justify-content: center;
 }
-.modal__text{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding:1em;
-    margin: 0;
-    overflow: auto;
-    height: 50%;
+.modal__text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0;
+  overflow: auto;
+  height: 50%;
 }
-.modal__actions{
-    margin: auto;
+.modal__actions {
+  margin: auto;
+}
+
+@keyframes modalIn {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
 }
