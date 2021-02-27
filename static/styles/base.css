@@ -1,7 +1,9 @@
-@import url("./layout/header.css");
-@import url("./layout/footer.css");
 @import url("./patterns/modal.css");
 @import url("./patterns/buttons.css");
+
+@import url("./layout/header.css");
+@import url("./layout/section.css");
+@import url("./layout/footer.css");
 :root {
   /* Fonts */
   font-family: "Nunito Sans", sans-serif;
@@ -37,10 +39,21 @@ li {
 a {
   text-decoration: none;
 }
+h2,h3{
+  text-transform: capitalize;
+}
+.main{
+  grid-area: main;
+}
+.main__content{
+  /* border: 0 2px solid lightgray; */
+}
 /* Wraper */
-.wraper {
+.wrapper {
   width: 900px;
+  height: 100%;
   margin: auto;
 }
+
 
 

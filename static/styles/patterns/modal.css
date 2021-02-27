@@ -16,6 +16,7 @@
   justify-content: center;
 
   transition: 1.1s ease-in;
+  z-index: 1;
 }
 .modal {
   display: inline-flex;

@@ -8,9 +8,10 @@
 .footer a {
   color: var(--color-white);
 }
-.wraper{
-    height: 100%;
-    margin: 0;  
+.footer__wrapper{
+  width: 900px;
+  height: 100%;
+  margin: auto;
 }
 .footer__content {
   padding: 1rem 2rem;

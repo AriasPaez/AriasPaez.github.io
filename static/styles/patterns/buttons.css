@@ -23,6 +23,8 @@
     background-color: var(--color-green-20);
     box-shadow: 0 -5px 0 0 var(--color-green-30) inset;
 
+    font-size: 1.1rem;
+
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -53,5 +55,10 @@
       color: yellow;
     }
   .btn__mode__page {
-    background-color: var(--color-blue-50);
+    background-color: var(--color-blue-30);
+    box-shadow: 0 -5px 0 0 var(--color-white) inset;
+  }
+  .btn__mode__page:hover {
+    background-color: var(--color-blue-20);
+    /* box-shadow: 0 -5px 0 0 var(--color-white) inset; */
   }

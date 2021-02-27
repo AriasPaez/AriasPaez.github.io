@@ -1,0 +1,12 @@
+.section{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+.article{
+    margin: 0 2rem;
+    padding:1em;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: -10px 10px 3px 0px lightgrey;
+}
