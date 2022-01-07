@@ -1,0 +1,13 @@
+{
+  "Index": {
+    "title": "Index page title."
+  },
+  "AppLayout": {
+    "footer": {
+      "author": "Cristian Arias",
+      "message": "Made by ",
+      "copyright": "All Rights Reserved."
+    },
+    "title": "I am the foooteeeeeeeeeeeer"
+  }
+}
